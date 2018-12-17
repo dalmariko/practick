@@ -9,7 +9,7 @@ let namesArr=['Denis','ivan','eugen'];
 let [denis, ivan,eugen]=namesArr;
 let [, ,c]=namesArr;
 
-console.log(denis, ivan,eugen);
+console.log(denis,ivan,eugen);
 
 
 //спред это три точки

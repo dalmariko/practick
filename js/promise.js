@@ -76,23 +76,23 @@ promis
 
 */
 
-function promis1(value) {
-    return new Promise((resolve,reject)=>{
-setTimeout(()=>{
-    console.log('promis_1');
-    resolve (value);
-},2000);
-    });
-}
+// function promis1(value) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log('promis_1');
+//             resolve(value);
+//         }, 2000);
+//     });
+// }
 
-function promis2(value) {
-    return new Promise((resolve,reject)=>{
-setTimeout(()=>{
-    console.log('promis_2');
-    resolve (value);
-},10000);
-    });
-}
+// function promis2(value) {
+//     return new Promise((resolve,reject)=>{
+// setTimeout(()=>{
+//     console.log('promis_2'+' '+ value);
+//     resolve (value);
+// },10000);
+//     });
+// }
 
 
 // promis1('мое значение')
@@ -105,8 +105,9 @@ setTimeout(()=>{
 //     .then((data)=>{
 //       console.log(data);
 // });
-//
 
+
+/*
 Promise.all([
     promis1('value1'),
     promis2('value2')
@@ -116,25 +117,25 @@ Promise.all([
 })
 .catch((err)=>{console.log(err)});
 
+*/
 
 
-/*
 
 const promise_http=new PromiseHttp();
-promise_http.get(url1)
-    .then(res => {
-        console.log(res);
-    //    действия с ответом
-    })
-    .then( res2 => {
-        promise_http.get(url2);
-        // console.log(res2);
-    //действия со вторым ответом
-    })
-    .catch(err => console.log(err));
+// promise_http.get(url1)
+//     .then(res => {
+//         console.log(res);
+//     //    действия с ответом
+//     })
+//     .then( res2 => {
+//         promise_http.get(url2);
+//         // console.log(res2);
+//     //действия со вторым ответом
+//     })
+//     .catch(err => console.log(err));
 
 // второй вариант когда всесразу
-Promis.all([
+Promise.all([
     promise_http.get(url1),
     promise_http.get(url2)
 ])
@@ -144,7 +145,6 @@ Promis.all([
 //Действия с двумя ответами
 })
     .catch(err => console.log(err));
-*/
 
 
 /*
